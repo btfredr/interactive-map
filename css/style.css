@@ -13,19 +13,19 @@ body {
 }
 
 [id^= "routeline_"] {
+    transform-box: fill-box;
     transition: stroke 1s, stroke-width 0.6s;
     transform-origin: center;
-    transform-box: fill-box;
 }
 
 [id^= "routeline_"]:hover {
-    stroke: green;
     stroke-width: 7px;
+    stroke: green;
 }
 
 [id^= "terminal_"] {
-    transform-origin: center;
     transform-box: fill-box;
+    transform-origin: center;
 }
 
 
