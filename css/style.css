@@ -1,0 +1,43 @@
+body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    background-color: rgb(243, 243, 243);
+}
+
+.map-container {
+    max-width: 1200px;
+    margin: auto;
+    height: auto;
+}
+
+[id^= "routeline_"] {
+    transition: stroke 1s, stroke-width 0.6s;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+[id^= "routeline_"]:hover {
+    stroke: green;
+    stroke-width: 7px;
+}
+
+[id^= "terminal_"] {
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+
+[id^= "terminal_"]:hover {
+    transform: scale(1.4);
+}
+
+[id^= "popup_"] {
+    transition: opacity .2s;
+    opacity: 0;
+}
+
+.popup {
+    opacity: 0.7;
+}
